@@ -1,0 +1,9 @@
+pyparsing==2.4.7
+pyhocon==0.3.57
+opencv_python==4.5.2.52
+scipy==1.7.0
+PyMCubes==0.1.2
+trimesh==3.9.8
+numpy==1.19.2
+tqdm==4.65.0
+matplotlib==3.5.3
