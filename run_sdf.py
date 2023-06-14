@@ -48,6 +48,7 @@ class Runner:
         self.expID = self.conf.get_string('conf.expID') 
 
         dataset = self.conf.get_string('conf.dataset')
+        self.is_real = self.conf.get_bool('conf.is_real')
         self.image_setkeyname =  self.conf.get_string('conf.image_setkeyname') 
 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -84,7 +85,10 @@ class Runner:
         self.z_min = self.conf.get_float('mesh.z_min')
         self.level_set = self.conf.get_float('mesh.level_set')
 
-        self.data = load_data(dataset)
+        if self.is_real:
+            self.data = load_data_real(dataset, self.conf)
+        else:
+            self.data = load_data(dataset)
 
         self.H, self.W = self.data[self.image_setkeyname][0].shape
 
