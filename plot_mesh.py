@@ -33,4 +33,4 @@ if __name__=='__main__':
     runner = Runner(args.conf, args.is_continue, write_config=False)
     
     runner.set_params()
-    runner.validate_mesh(threshold=0.1)
+    runner.validate_mesh(threshold=0.00)
