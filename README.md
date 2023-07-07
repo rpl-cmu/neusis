@@ -70,11 +70,13 @@ This issue could be mitigated via data normalization and enabling geometric init
 Consider citing as below if you find our work helpful to your project:
 
 ```
-@article{qadri2022neural,
-  title={Neural Implicit Surface Reconstruction using Imaging Sonar},
+@inproceedings{qadri2023neural,
+  title={Neural implicit surface reconstruction using imaging sonar},
   author={Qadri, Mohamad and Kaess, Michael and Gkioulekas, Ioannis},
-  journal={arXiv preprint arXiv:2209.08221},
-  year={2022}
+  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={1040--1047},
+  year={2023},
+  organization={IEEE}
 }
 ```
 
